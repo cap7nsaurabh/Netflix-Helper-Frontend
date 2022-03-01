@@ -1,0 +1,105 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="user-dashboard"><h1>Home</h1></a>
+          </li>
+          <li class="nav-item" id="favlist">
+              <a class="nav-link" href="user-fav"><h6>Favourites</h6></a>
+          </li>
+          <li class="nav-item" id="wl_list">
+            <a class="nav-link" href="user-wl"><h6>Watch Later</h6></a>
+          </li>
+          
+      </ul>
+  </div>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+  <div class="search">
+    <form action="#"> 
+      <input [(ngModel)] = "searchquery" type="text" id="search"
+          placeholder=" Search shows, movies, anime..."
+          name="search"> 
+          
+      <button (click)="search()"> 
+          <i class="fa fa-search"
+              style="font-size: 14px;"> 
+              Search
+          </i> 
+      </button> 
+  </form> 
+  </div>
+  </li>
+</ul>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <!-- insert username here -->
+              <!-- I am not sure yahi dalna hai ki kahi aur.
+              Apne hisaab se dekh lena bro. :D -->
+              <font  color="white">Welcome {{userdet.userid}}</font>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-info"  id="logout"
+            (click)="redirect()">Logout</button>
+          </li>
+          
+      </ul>
+  </div>
+</nav>
+<div class="row">
+<ng-template ngFor let-item [ngForOf]="movies.ITEMS" *ngIf="dash">
+  <!-- <li>{{item.title}}</li> -->
+  <div class="card movie_card">
+      <img src={{item.image}} class="card-img-top" alt="...">
+      
+      <div class="card-body">
+          <!-- <i (click)="view(item.netflixid)" class="fas fa-plus" 
+          data-toggle="tooltip" data-placement="bottom" title="Add To Favourites">
+            </i> -->
+        <h5 class="card-title">{{item.title}}</h5>
+
+        
+              <span class="movie_info">{{item.released}}</span>
+              <span class="movie_info float-right">
+                <i class="fas fa-star"></i> {{item.rating}}</span>
+                <div class="btn-group">
+                  <button  type="button" id="addtofav" class="button"
+                  (click)="addtofav(item.netflixid)"><h6>Favourite</h6></button>
+                <button type="button" id="addtowl" class="button"
+                (click)="addtowl(item.netflixid)"><h6>Watch Later</h6></button>
+              </div>
+              
+      </div>
+    </div>
+  </ng-template>
+</div>
+
+<div class="row">
+<ng-template ngFor let-item [ngForOf]="searchres" *ngIf="sear">
+  <!-- <li>{{item.title}}</li> -->
+  <div class="card movie_card">
+    <img src={{item.image}} class="card-img-top" alt="...">
+    
+    <div class="card-body">
+        <!-- <i (click)="view(item.netflixid)" class="fas fa-plus" 
+        data-toggle="tooltip" data-placement="bottom" title="Add To Favourites">
+          </i> -->
+      <h5 class="card-title">{{item.title}}</h5>
+
+      
+            <span class="movie_info">{{item.released}}</span>
+            <span class="movie_info float-right">
+              <i class="fas fa-star"></i> {{item.rating}}</span>
+              <div class="btn-group">
+                <button  type="button" id="addtofav" class="button"
+                (click)="addtofav(item.netflixid)"><h6>Favourite</h6></button>
+              <button type="button" id="addtowl" class="button"
+              (click)="addtowl(item.netflixid)"><h6>Watch Later</h6></button>
+            </div> 
+    </div>
+  </div>
+</ng-template>
+</div>
+<div><span id="nores" *ngIf="searempty"><font color="white">No results!</font></span>  </div>
+

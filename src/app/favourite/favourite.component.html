@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="user-dashboard">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="user-fav"><h1>Favourites</h1></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="user-wl"><h6>Watch Later</h6></a>
+          </li>
+          
+      </ul>
+  </div>
+  
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary" 
+            (click)="redirect()">Logout</button>
+          </li>
+          
+      </ul>
+  </div>
+</nav>
+  <div class="row">
+  <ng-template ngFor let-item [ngForOf]="favlist" >
+    <!-- <li>{{item.title}}</li> -->
+ 
+
+    <div class="card movie_card">
+      <img src={{item.image}} class="card-img-top" alt="...">
+      
+      <div class="card-body">
+          <!-- <i (click)="view(item.netflixid)" class="fas fa-plus" 
+          data-toggle="tooltip" data-placement="bottom" title="Add To Favourites">
+            </i> -->
+        <h5 class="card-title">{{item.title}}</h5>
+
+        
+              <span class="movie_info">{{item.description}}</span>
+              <span class="movie_info float-right">
+                <i class="fas fa-star"></i> {{item.type}}</span>
+              <button type="button" id="rmfromfav" class="button button1"
+              (click)="view(item.id)"><h6>Remove from Favourites</h6></button>
+              
+      </div>
+    </div>
+</ng-template>
+</div>

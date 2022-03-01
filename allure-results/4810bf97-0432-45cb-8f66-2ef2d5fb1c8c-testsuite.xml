@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615264603504' stop='1615264603591'>
+    <name>FrontEnd App</name>
+    <title>FrontEnd App</title>
+    <test-cases>
+        <test-case start='1615264603504' status='passed' stop='1615264603513'>
+            <name>should navigate to login page when application is launched</name>
+            <title>should navigate to login page when application is launched</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264603514' status='passed' stop='1615264603520'>
+            <name>should navigate to sign up page when Sign Up button is clicked</name>
+            <title>should navigate to sign up page when Sign Up button is clicked</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264603521' status='passed' stop='1615264603536'>
+            <name>should be able to register new user</name>
+            <title>should be able to register new user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264603536' status='passed' stop='1615264603553'>
+            <name>should be able to login using existing username and password and navigate to dashboard</name>
+            <title>should be able to login using existing username and password and navigate to dashboard</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264603553' status='passed' stop='1615264603558'>
+            <name>Should navigate to the Favourites page</name>
+            <title>Should navigate to the Favourites page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264603558' status='passed' stop='1615264603572'>
+            <name>should be able to logout user</name>
+            <title>should be able to logout user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

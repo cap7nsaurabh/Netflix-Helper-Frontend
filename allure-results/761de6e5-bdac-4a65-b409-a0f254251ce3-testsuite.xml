@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615264603642' stop='1615264609483'>
+    <name>Protractor Demo App</name>
+    <title>Protractor Demo App</title>
+    <test-cases>
+        <test-case start='1615264603642' status='passed' stop='1615264607895'>
+            <name>Should have a title</name>
+            <title>Should have a title</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264607895' status='passed' stop='1615264607940'>
+            <name>Should enter username &amp; password</name>
+            <title>Should enter username &amp; password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264607940' status='passed' stop='1615264609082'>
+            <name>Should enter click login button</name>
+            <title>Should enter click login button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264609082' status='passed' stop='1615264609366'>
+            <name>Should click Favourite button</name>
+            <title>Should click Favourite button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264609366' status='passed' stop='1615264609387'>
+            <name>Should click Watch Later button</name>
+            <title>Should click Watch Later button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264609387' status='passed' stop='1615264609406'>
+            <name>Should click Favlist button</name>
+            <title>Should click Favlist button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264609406' status='passed' stop='1615264609434'>
+            <name>Should remove from Favlist</name>
+            <title>Should remove from Favlist</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264609434' status='passed' stop='1615264609482'>
+            <name>Should click on log out </name>
+            <title>Should click on log out </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

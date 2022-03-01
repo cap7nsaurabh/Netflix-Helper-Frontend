@@ -1,0 +1,83 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615264445733' stop='1615264463234'>
+    <name>Protractor Demo App</name>
+    <title>Protractor Demo App</title>
+    <test-cases>
+        <test-case start='1615264445733' status='failed' stop='1615264455119'>
+            <name>Should have a title</name>
+            <title>Should have a title</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected 'localhost' to be 'Netflix Helper'.</message>
+                <stack-trace>Error: Failed expectation
+                    at C:\Users\vicksta\Desktop\training\userview\e2e\src\dashboard.e2e-spec.ts:17:25
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1615264455119' status='failed' stop='1615264455196'>
+            <name>Should enter username &amp; password</name>
+            <title>Should enter username &amp; password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected 'http://localhost:4200/' to contain '/login-user'.</message>
+                <stack-trace>Error: Failed expectation
+                    at C:\Users\vicksta\Desktop\training\userview\e2e\src\dashboard.e2e-spec.ts:23:25
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1615264455196' status='passed' stop='1615264455207'>
+            <name>Should enter click login button</name>
+            <title>Should enter click login button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264455207' status='passed' stop='1615264463054'>
+            <name>Should click Favourite button</name>
+            <title>Should click Favourite button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264463054' status='passed' stop='1615264463076'>
+            <name>Should click Watch Later button</name>
+            <title>Should click Watch Later button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264463076' status='passed' stop='1615264463110'>
+            <name>Should click Favlist button</name>
+            <title>Should click Favlist button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264463110' status='passed' stop='1615264463151'>
+            <name>Should remove from Favlist</name>
+            <title>Should remove from Favlist</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264463151' status='passed' stop='1615264463232'>
+            <name>Should click on log out </name>
+            <title>Should click on log out </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615264463238' stop='1615264467763'>
+    <name>Protractor Demo  App</name>
+    <title>Protractor Demo  App</title>
+    <test-cases>
+        <test-case start='1615264463238' status='failed' stop='1615264467594'>
+            <name>Should contain a title</name>
+            <title>Should contain a title</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected 'localhost' to be 'Netflix Helper'.</message>
+                <stack-trace>Error: Failed expectation
+                    at C:\Users\vicksta\Desktop\training\userview\e2e\src\login.e2e-spec.ts:16:25
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1615264467594' status='failed' stop='1615264467673'>
+            <name>Should enter username &amp; password</name>
+            <title>Should enter username &amp; password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected 'http://localhost:4200/' to contain '/login-user'.</message>
+                <stack-trace>Error: Failed expectation
+                    at C:\Users\vicksta\Desktop\training\userview\e2e\src\login.e2e-spec.ts:27:25
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1615264467673' status='passed' stop='1615264467724'>
+            <name>Should enter click login button</name>
+            <title>Should enter click login button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615264467724' status='passed' stop='1615264467762'>
+            <name>Should redirect</name>
+            <title>Should redirect</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
